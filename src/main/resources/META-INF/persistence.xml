@@ -8,8 +8,10 @@
       <jta-data-source>java:jboss/datasources/ApplicationDS</jta-data-source>
       <properties>
          <!-- Properties for Hibernate -->
-         <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+         <property name="hibernate.hbm2ddl.auto" value="create" />
          <property name="hibernate.show_sql" value="false" />
+         <property name="javax.persistence.sql-load-script-source" value="import.sql" />
+         
       </properties>
    </persistence-unit>
 </persistence>
